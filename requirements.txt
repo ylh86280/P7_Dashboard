@@ -13,4 +13,4 @@ flasgger==0.9.4
 streamlit
 dill==0.3.4
 plotly==5.6.0
-
+shap==0.40.0
