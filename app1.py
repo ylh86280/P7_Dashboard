@@ -38,7 +38,7 @@ def main():
         layout='wide',
         initial_sidebar_state="collapsed"
     )
-    pickle_in = open("ylh_rf.pkl", "rb")
+    pickle_in = open("ylh_lgbm.pkl", "rb")
     classifier = pickle.load(pickle_in)
 
     explainer = pickle.load(open("lime_explainer.pickle", "rb"))

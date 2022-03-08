@@ -37089,25 +37089,25 @@
 /***/ })
 /******/ ]);
 //# sourceMappingURL=bundle.js.map </script></head><body>
-        <div class="lime top_div" id="top_divQEHU8TT9ERMVL93"></div>
+        <div class="lime top_div" id="top_divLJLWJJ3FJPD13RL"></div>
         
         <script>
-        var top_div = d3.select('#top_divQEHU8TT9ERMVL93').classed('lime top_div', true);
+        var top_div = d3.select('#top_divLJLWJJ3FJPD13RL').classed('lime top_div', true);
         
             var pp_div = top_div.append('div')
                                 .classed('lime predict_proba', true);
             var pp_svg = pp_div.append('svg').style('width', '100%');
-            var pp = new lime.PredictProba(pp_svg, ["solv", "non_solv"], [0.6387920015264648, 0.3612079984735354]);
+            var pp = new lime.PredictProba(pp_svg, ["solv", "non_solv"], [0.5689657832181372, 0.4310342167818628]);
             
         
         var exp_div;
             var exp = new lime.Explanation(["solv", "non_solv"]);
         
                 exp_div = top_div.append('div').classed('lime explanation', true);
-                exp.show([["0.53 < EXT_SOURCE_3 <= 0.63", -0.06005335216533729], ["EXT_SOURCE_1 > 0.51", -0.04495063475222232], ["PREV_NAME_CONTRACT_STATUS_Refused_MEAN <= 0.00", -0.004485399403519192], ["0.38 < BURO_CREDIT_ACTIVE_Active_MEAN <= 0.50", 0.004198986244363103], ["34.00 < AGE_YEARS <= 43.16", -0.003666746698021146], ["0.39 < EXT_SOURCE_2 <= 0.57", 0.003313127413964714], ["1.31 < BURO_YEARS_CREDIT_UPDATE_MEAN <= 1.97", 0.0012688799902623366], ["4.99 < BURO_YEARS_CREDIT_MIN <= 6.88", -0.0010208945751144307], ["4.55 < YEARS_EMPLOYED <= 7.56", 0.0009690103835624974], ["BURO_YEARS_CREDIT_MEAN > 3.73", 0.00020703201513803815]], 1, exp_div);
+                exp.show([["EXT_SOURCE_1 <= 0.51", 0.11222450376319112], ["EXT_SOURCE_2 <= 0.39", 0.06577075774960112], ["0.53 < EXT_SOURCE_3 <= 0.63", -0.030053661756315356], ["PREV_NAME_CONTRACT_STATUS_Refused_MEAN <= 0.00", 0.022828351981257614], ["BURO_CREDIT_ACTIVE_Active_MEAN <= 0.23", 0.02259506444063238], ["0.70 < BURO_YEARS_CREDIT_UPDATE_MEAN <= 1.31", -0.019359364782353134], ["AGE_YEARS <= 34.00", 0.004214820039080797], ["2.01 < BURO_YEARS_CREDIT_MEAN <= 2.88", 0.0026210921587144333], ["YEARS_EMPLOYED <= 2.55", 0.0022394526370554603], ["BURO_YEARS_CREDIT_MIN <= 3.19", 0.0013751727663738425]], 1, exp_div);
                 
         var raw_div = top_div.append('div');
-            exp.show_raw_tabular([["EXT_SOURCE_3", "0.61", -0.06005335216533729], ["EXT_SOURCE_1", "0.53", -0.04495063475222232], ["PREV_NAME_CONTRACT_STATUS_Refused_MEAN", "0.00", -0.004485399403519192], ["BURO_CREDIT_ACTIVE_Active_MEAN", "0.42", 0.004198986244363103], ["AGE_YEARS", "38.29", -0.003666746698021146], ["EXT_SOURCE_2", "0.51", 0.003313127413964714], ["BURO_YEARS_CREDIT_UPDATE_MEAN", "1.78", 0.0012688799902623366], ["BURO_YEARS_CREDIT_MIN", "5.77", -0.0010208945751144307], ["YEARS_EMPLOYED", "5.11", 0.0009690103835624974], ["BURO_YEARS_CREDIT_MEAN", "3.84", 0.00020703201513803815]], 1, raw_div);
+            exp.show_raw_tabular([["EXT_SOURCE_1", "0.51", 0.11222450376319112], ["EXT_SOURCE_2", "0.06", 0.06577075774960112], ["EXT_SOURCE_3", "0.55", -0.030053661756315356], ["PREV_NAME_CONTRACT_STATUS_Refused_MEAN", "0.00", 0.022828351981257614], ["BURO_CREDIT_ACTIVE_Active_MEAN", "0.00", 0.02259506444063238], ["BURO_YEARS_CREDIT_UPDATE_MEAN", "0.92", -0.019359364782353134], ["AGE_YEARS", "27.66", 0.004214820039080797], ["BURO_YEARS_CREDIT_MEAN", "2.71", 0.0026210921587144333], ["YEARS_EMPLOYED", "1.79", 0.0022394526370554603], ["BURO_YEARS_CREDIT_MIN", "3.07", 0.0013751727663738425]], 1, raw_div);
         
         </script>
-        </body></html>
+        </body></html>/html>
