@@ -76,7 +76,7 @@ def main():
     numcli=int(numcli)
     df0[df0.SK_ID_CURR==numcli]
     age=df0[df0.SK_ID_CURR==numcli].AGE_YEARS
-    st.sidebar.subheader('Age du client '+ str(age))
+    st.sidebar.write('Age du client '+ str(age))
     ########### Top ##############################
     col1, col15, col2 = st.columns((2, 1, 3))
     with col1:
