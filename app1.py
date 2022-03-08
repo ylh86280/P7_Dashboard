@@ -42,14 +42,14 @@ def main():
     classifier = pickle.load(pickle_in)
 
     explainer = pickle.load(open("lime_explainer.pickle", "rb"))
-    df = pickle.load(open("Credit_global_test.pkl", "rb"))
+    df0 = pickle.load(open("Credit_global_test.pkl", "rb"))
     columns_to_keep = ['SK_ID_CURR','EXT_SOURCE_1', 'EXT_SOURCE_2', 'EXT_SOURCE_3', 'AGE_YEARS', 'BURO_CREDIT_ACTIVE_Active_MEAN',
                        'PREV_NAME_CONTRACT_STATUS_Refused_MEAN',
                        'YEARS_EMPLOYED',
                        'BURO_YEARS_CREDIT_MIN',
                        'BURO_YEARS_CREDIT_MEAN',
                        'BURO_YEARS_CREDIT_UPDATE_MEAN' ]
-    df = df[columns_to_keep]
+    df = df0[columns_to_keep]
     seuil = 0.5
 
     def predict_note_authentication(data):
