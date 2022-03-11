@@ -56,7 +56,7 @@ def main():
     
     df=df0[df0['TARGET'].isnull()]
     df = df[columns_to_keep]
-    seuil = 0.5
+    seuil = 0.8
 
     def predict_note_authentication(data):
 
@@ -166,7 +166,7 @@ def main():
 
     col1, col15, col2 = st.columns((6, 1, 8))
     with col1:
-        fig = yfunctions.gauge_charts(proba)
+        fig = yfunctions.gauge_charts(proba,seuil)
         st.write(fig)
     with col15:
         # Empty column to center the elements
