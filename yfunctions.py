@@ -28,7 +28,7 @@ def gauge_charts(xval,yseuil):
                  'steps' : [
                      {'range': [0, 0.5], 'color': "lightgray"},
                      {'range': [0.5, 1.0], 'color': "gray"}],
-                 'threshold' : {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': 0.5}}))
+                 'threshold' : {'line': {'color': "red", 'width': 4}, 'thickness': 0.75, 'value': yseuil}}))
 
     return fig
 
