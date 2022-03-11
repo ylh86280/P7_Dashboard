@@ -16,14 +16,14 @@ import base64
 import plotly.graph_objects as go
 import plotly.express as px
 
-def gauge_charts(xval):
+def gauge_charts(xval,yseuil):
 
     fig = go.Figure(go.Indicator(
         domain = {'x': [0, 1], 'y': [0, 1]},
         value = xval,
         mode = "gauge+number+delta",
         title = {'text': "Score"},
-        delta = {'reference': 0.5},
+        delta = {'reference': yseuil},
         gauge = {'axis': {'range': [None, 1.0]},
                  'steps' : [
                      {'range': [0, 0.5], 'color': "lightgray"},
