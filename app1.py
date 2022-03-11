@@ -56,7 +56,7 @@ def main():
     
     df=df0[df0['TARGET'].isnull()]
     df = df[columns_to_keep]
-    seuil = 0.8
+    seuil = 0.87
 
     def predict_note_authentication(data):
 
