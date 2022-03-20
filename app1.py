@@ -172,7 +172,7 @@ def main():
         # Empty column to center the elements
         st.write("")
     with col2:
-        st.image('./img/Feat_import.png', width=500)
+        st.image('./img/Feat_import.jpg', width=500)
 
     st.write("## Détail des composantes du score pour le client ")
     exp=lime_show(X)
